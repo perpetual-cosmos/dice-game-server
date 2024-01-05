@@ -100,21 +100,7 @@ io.on('connection', (socket) => {
     io.to(roomKey).emit('game-state', room);
   });
 
-  socket.on('disconnect', () => {
-    rooms.forEach((room, roomKey) => {
-      room.players = room.players.filter(p => p.id !== socket.id);
-      
-      if (room.players.length === 0) {
-        rooms.delete(roomKey);
-      } else {
-        if (room.currentPlayer === socket.id) {
-          room.currentPlayer = room.players[0].id;
-          room.players[0].isActive = true;
-        }
-        io.to(roomKey).emit('game-state', room);
-      }
-    });
-  });
+  ;
 });
 
 httpServer.listen(PORT, () => {
