@@ -7,6 +7,7 @@ Game Rules
 Multiplayer game : Functionality has be achieved by using socketIo
 
 commands to setup the Dice-game: 
+
     Frontend:
     git clone "URL"
     cd dice-game-frontend
