@@ -10,7 +10,7 @@ const PORT = 3001;
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://localhost:3000/",
+    origin: "https://dice-game-frontend-eta.vercel.app/",
     methods: ["GET", "POST"]
   }
 });
