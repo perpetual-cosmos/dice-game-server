@@ -10,7 +10,7 @@ const PORT = 3001;
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000https://dice-game-frontend-o5cdz6by1-perpetual-cosmos-projects.vercel.app/",
+    origin: "https://dice-game-frontend-eta.vercel.app/",
     methods: ["GET", "POST"]
   }
 });
